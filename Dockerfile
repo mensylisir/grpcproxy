@@ -1,7 +1,7 @@
 FROM golang:1.13-alpine AS builder
 
 ENV GO111MODULE=on
-
+ENV GOPROXY=https://goproxy.cn
 #WORKDIR /go/src/github.com/gusaul/grpcox
 WORKDIR /src
 
